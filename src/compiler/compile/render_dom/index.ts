@@ -53,7 +53,7 @@ export default function dom(
 	const should_add_css = (
 		!options.customElement &&
 		!!styles &&
-		options.css === 'internal'
+		options.css === 'injected'
 	);
 
 	if (should_add_css) {

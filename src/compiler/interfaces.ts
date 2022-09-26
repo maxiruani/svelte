@@ -179,7 +179,7 @@ export interface CompileOptions {
 	legacy?: boolean;
 	customElement?: boolean;
 	tag?: string;
-	css?: 'internal' | 'external' | 'none' | boolean;
+	css?: 'injected' | 'external' | 'none' | boolean;
 	loopGuardTimeout?: number;
 	namespace?: string;
 	cssHash?: CssHashGetter;
@@ -191,7 +191,7 @@ export interface CompileOptions {
 export interface ParserOptions {
 	filename?: string;
 	customElement?: boolean;
-	css?: 'internal' | 'external' | 'none' | boolean;
+	css?: 'injected' | 'external' | 'none' | boolean;
 }
 
 export interface Visitor {
