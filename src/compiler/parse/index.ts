@@ -19,7 +19,7 @@ export class Parser {
 	readonly template: string;
 	readonly filename?: string;
 	readonly customElement: boolean;
-	readonly css_mode: 'internal' | 'external' | 'none' | boolean;
+	readonly css_mode: 'injected' | 'external' | 'none' | boolean;
 
 	index = 0;
 	stack: TemplateNode[] = [];
