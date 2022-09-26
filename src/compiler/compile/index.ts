@@ -106,7 +106,7 @@ function validate_options(options: CompileOptions, warnings: Warning[]) {
 }
 
 export default function compile(source: string, options: CompileOptions = {}) {
-	options = Object.assign({ generate: 'dom', dev: false, enableSourcemap: true, css: 'internal' }, options);
+	options = Object.assign({ generate: 'dom', dev: false, enableSourcemap: true, css: 'injected' }, options);
 
 	const stats = new Stats();
 	const warnings = [];
